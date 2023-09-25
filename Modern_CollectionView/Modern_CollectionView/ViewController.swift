@@ -8,13 +8,33 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    // MARK: - Properties
+    
     let collectionView = UICollectionView(frame: .zero, collectionViewLayout: .init())
+    private var dataSource: UICollectionViewDiffableDataSource<Section, Item>?
+    
+    
+    // MARK: - ViewDidLoad
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         collectionView.register(BannerCollectionViewCell.self, forCellWithReuseIdentifier: BannerCollectionViewCell.id)
         collectionView.setCollectionViewLayout(createLayout(), animated: true)
+        setDataSource()
+    }
+    
+    // MARK: - Method for CollectionView Set DataSource & Layout
+    
+    private func setDataSource() {
+        dataSource = UICollectionViewDiffableDataSource(collectionView: collectionView, cellProvider: { collectionView, indexPath, itemIdentifier in
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: BannerCollectionViewCell.id, for: indexPath) as? BannerCollectionViewCell else {
+                return UICollectionViewCell()
+            }
+//            cell.config(title: <#T##String#>, imageUrl: <#T##String#>)
+            return cell
+        })
     }
     
     private func createLayout() -> UICollectionViewCompositionalLayout {

@@ -2,7 +2,7 @@
 //  BannerCollectionViewCell.swift
 //  Modern_CollectionView
 //
-//  Created by eunjin on 2023/09/25.
+//  Created by elly on 2023/09/25.
 //
 
 import UIKit
