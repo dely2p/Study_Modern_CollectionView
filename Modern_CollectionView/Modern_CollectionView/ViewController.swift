@@ -9,11 +9,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let collectionView = UICollectionView(frame: .zero, collectionViewLayout: .init())
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        collectionView.register(BannerCollectionViewCell.self, forCellWithReuseIdentifier: BannerCollectionViewCell.id)
     }
-
-
 }
-
