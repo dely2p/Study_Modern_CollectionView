@@ -22,6 +22,7 @@ class ViewController: UIViewController {
         setUI()
         
         collectionView.register(BannerCollectionViewCell.self, forCellWithReuseIdentifier: BannerCollectionViewCell.id)
+        collectionView.register(NormalCaroselCollectionViewCell.self, forCellWithReuseIdentifier: NormalCaroselCollectionViewCell.id)
         collectionView.setCollectionViewLayout(createLayout(), animated: true)
         setDataSource()
         setSnapShot()
