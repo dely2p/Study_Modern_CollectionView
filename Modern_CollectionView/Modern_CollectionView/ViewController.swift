@@ -87,8 +87,12 @@ class ViewController: UIViewController {
     }
     
     private func createLayout() -> UICollectionViewCompositionalLayout {
+        
+        let config = UICollectionViewCompositionalLayoutConfiguration()
+        config.interSectionSpacing = 30
+        
         // section index
-        return UICollectionViewCompositionalLayout { [weak self] sectionIndex, _ in
+        return UICollectionViewCompositionalLayout (sectionProvider: { [weak self] sectionIndex, _ in
             switch sectionIndex {
                 case 0:
                     return self?.createBannerSection()
@@ -99,7 +103,7 @@ class ViewController: UIViewController {
                 default:
                     return self?.createBannerSection()
             }
-        }
+        }, configuration: config)
     }
     
     private func createBannerSection() -> NSCollectionLayoutSection {
@@ -121,6 +125,7 @@ class ViewController: UIViewController {
         // item
         let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalHeight(1.0))
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
+        item.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 15)
         
         // group
         let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.7), heightDimension: .absolute(100))
@@ -128,6 +133,7 @@ class ViewController: UIViewController {
         
         // section
         let section = NSCollectionLayoutSection(group: group)
+        section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 20)
         section.orthogonalScrollingBehavior = .continuous
         return section
     }
