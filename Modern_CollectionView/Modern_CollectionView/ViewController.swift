@@ -23,6 +23,7 @@ class ViewController: UIViewController {
         
         collectionView.register(BannerCollectionViewCell.self, forCellWithReuseIdentifier: BannerCollectionViewCell.id)
         collectionView.register(NormalCaroselCollectionViewCell.self, forCellWithReuseIdentifier: NormalCaroselCollectionViewCell.id)
+        collectionView.register(ListCarouselCollectionViewCell.self, forCellWithReuseIdentifier: ListCarouselCollectionViewCell.id)
         collectionView.setCollectionViewLayout(createLayout(), animated: true)
         setDataSource()
         setSnapShot()
@@ -55,6 +56,12 @@ class ViewController: UIViewController {
                 }
                 cell.config(imageUrl: item.imageUrl, title: item.title, subTitle: item.subTitle)
                 return cell
+            case .listCarousel(let item):
+                guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ListCarouselCollectionViewCell.id, for: indexPath) as? ListCarouselCollectionViewCell else {
+                    return UICollectionViewCell()
+                }
+                cell.config(imageUrl: item.imageUrl, title: item.title, subTitle: item.subTitle)
+                return cell
             default:
                 return UICollectionViewCell()
             }
@@ -83,6 +90,13 @@ class ViewController: UIViewController {
         ]
         snapshot.appendItems(normalItems, toSection: normalSection)
         
+        let listSection = Section(id: "ListCarousel")
+        let listItem = [
+            Item.listCarousel(HomeItem(title: "교촌 치킨", subTitle: "간장치킨", imageUrl: "https://www.kyochon.com/uploadFiles/TB_ITEM/%EB%A0%88%ED%97%88(1).png")),
+            Item.listCarousel(HomeItem(title: "네네 치킨", subTitle: "후라이드치킨", imageUrl: "https://nenechicken.com/17_new/images/adm/%EC%B2%AD%EC%96%91%EB%A7%88%EC%9A%94%EC%B9%98%ED%82%A8(4).jpg")),
+            Item.listCarousel(HomeItem(title: "굽네 치킨", subTitle: "양념치킨", imageUrl: "https://i.namu.wiki/i/SqEiby1n3a8827cObS11Xp4NJfKuN3SMGKH0YstTvcQltFNzjESwIMBicZbBlVIW5vMZdpHl8ik5imL6GmdNbg.webp"))
+        ]
+        snapshot.appendItems(listItem, toSection: listSection)
         dataSource?.apply(snapshot)
     }
     
