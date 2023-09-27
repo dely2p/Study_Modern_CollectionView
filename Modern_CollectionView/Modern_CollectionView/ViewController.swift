@@ -98,8 +98,8 @@ class ViewController: UIViewController {
                     return self?.createBannerSection()
                 case 1:
                     return self?.createNormalCarouselSection()
-//                case 2:
-//                2번째
+                case 2:
+                    return self?.createListCarouselSection()
                 default:
                     return self?.createBannerSection()
             }
@@ -134,6 +134,21 @@ class ViewController: UIViewController {
         // section
         let section = NSCollectionLayoutSection(group: group)
         section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 20)
+        section.orthogonalScrollingBehavior = .continuous
+        return section
+    }
+    
+    private func createListCarouselSection() -> NSCollectionLayoutSection {
+        // item
+        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalHeight(1.0))
+        let item = NSCollectionLayoutItem(layoutSize: itemSize)
+        
+        // group
+        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.7), heightDimension: .absolute(250))
+        let group = NSCollectionLayoutGroup.vertical(layoutSize: groupSize, repeatingSubitem: item, count: 3)
+        
+        // section
+        let section = NSCollectionLayoutSection(group: group)
         section.orthogonalScrollingBehavior = .continuous
         return section
     }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		45C694332AC326B6008A8FF8 /* NormalCaroselCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C694322AC326B6008A8FF8 /* NormalCaroselCollectionViewCell.swift */; };
+		45C694352AC461AA008A8FF8 /* ListCarouselCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C694342AC461AA008A8FF8 /* ListCarouselCollectionViewCell.swift */; };
 		AC7E93FF2AC157E900EED8E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7E93FE2AC157E900EED8E3 /* AppDelegate.swift */; };
 		AC7E94012AC157E900EED8E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7E94002AC157E900EED8E3 /* SceneDelegate.swift */; };
 		AC7E94032AC157E900EED8E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7E94022AC157E900EED8E3 /* ViewController.swift */; };
@@ -43,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		45C694322AC326B6008A8FF8 /* NormalCaroselCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalCaroselCollectionViewCell.swift; sourceTree = "<group>"; };
+		45C694342AC461AA008A8FF8 /* ListCarouselCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCarouselCollectionViewCell.swift; sourceTree = "<group>"; };
 		AC7E93FB2AC157E900EED8E3 /* Modern_CollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Modern_CollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC7E93FE2AC157E900EED8E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC7E94002AC157E900EED8E3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				AC7E942E2AC1631800EED8E3 /* Item.swift */,
 				AC7E94302AC1636B00EED8E3 /* BannerCollectionViewCell.swift */,
 				45C694322AC326B6008A8FF8 /* NormalCaroselCollectionViewCell.swift */,
+				45C694342AC461AA008A8FF8 /* ListCarouselCollectionViewCell.swift */,
 			);
 			path = Modern_CollectionView;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				AC7E942F2AC1631800EED8E3 /* Item.swift in Sources */,
 				AC7E94032AC157E900EED8E3 /* ViewController.swift in Sources */,
 				AC7E93FF2AC157E900EED8E3 /* AppDelegate.swift in Sources */,
+				45C694352AC461AA008A8FF8 /* ListCarouselCollectionViewCell.swift in Sources */,
 				45C694332AC326B6008A8FF8 /* NormalCaroselCollectionViewCell.swift in Sources */,
 				AC7E94312AC1636B00EED8E3 /* BannerCollectionViewCell.swift in Sources */,
 				AC7E94012AC157E900EED8E3 /* SceneDelegate.swift in Sources */,
