@@ -22,6 +22,8 @@
 		45C694882AC533A8008A8FF8 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 45C694872AC533A8008A8FF8 /* RxCocoa */; };
 		45C6948A2AC533A8008A8FF8 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 45C694892AC533A8008A8FF8 /* RxSwift */; };
 		45C6948D2AC533B2008A8FF8 /* RxAlamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 45C6948C2AC533B2008A8FF8 /* RxAlamofire */; };
+		45C694912AC536E4008A8FF8 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C694902AC536E4008A8FF8 /* Const.swift */; };
+		45C694942AC53930008A8FF8 /* TV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C694932AC53930008A8FF8 /* TV.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		45C694622AC52EED008A8FF8 /* TVAndMovieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVAndMovieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		45C694662AC52EED008A8FF8 /* TVAndMovieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVAndMovieUITests.swift; sourceTree = "<group>"; };
 		45C694682AC52EED008A8FF8 /* TVAndMovieUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVAndMovieUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		45C694902AC536E4008A8FF8 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		45C694932AC53930008A8FF8 /* TV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TV.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,7 @@
 				45C694422AC52EEC008A8FF8 /* AppDelegate.swift */,
 				45C694442AC52EEC008A8FF8 /* SceneDelegate.swift */,
 				45C694462AC52EEC008A8FF8 /* ViewController.swift */,
+				45C6948F2AC536D4008A8FF8 /* Network */,
 				45C694482AC52EEC008A8FF8 /* Main.storyboard */,
 				45C6944E2AC52EEC008A8FF8 /* Assets.xcassets */,
 				45C694502AC52EEC008A8FF8 /* LaunchScreen.storyboard */,
@@ -146,6 +151,23 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		45C6948F2AC536D4008A8FF8 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				45C694922AC53919008A8FF8 /* Entities */,
+				45C694902AC536E4008A8FF8 /* Const.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		45C694922AC53919008A8FF8 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				45C694932AC53930008A8FF8 /* TV.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,6 +318,8 @@
 				45C694472AC52EEC008A8FF8 /* ViewController.swift in Sources */,
 				45C694432AC52EEC008A8FF8 /* AppDelegate.swift in Sources */,
 				45C694452AC52EEC008A8FF8 /* SceneDelegate.swift in Sources */,
+				45C694912AC536E4008A8FF8 /* Const.swift in Sources */,
+				45C694942AC53930008A8FF8 /* TV.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
