@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		459280BF2AC54A8F00300F5B /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459280BE2AC54A8F00300F5B /* ViewModel.swift */; };
 		45C694432AC52EEC008A8FF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C694422AC52EEC008A8FF8 /* AppDelegate.swift */; };
 		45C694452AC52EEC008A8FF8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C694442AC52EEC008A8FF8 /* SceneDelegate.swift */; };
 		45C694472AC52EEC008A8FF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C694462AC52EEC008A8FF8 /* ViewController.swift */; };
@@ -51,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		459280BE2AC54A8F00300F5B /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		45C6943F2AC52EEC008A8FF8 /* TVAndMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVAndMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45C694422AC52EEC008A8FF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45C694442AC52EEC008A8FF8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				45C694422AC52EEC008A8FF8 /* AppDelegate.swift */,
 				45C694442AC52EEC008A8FF8 /* SceneDelegate.swift */,
 				45C694462AC52EEC008A8FF8 /* ViewController.swift */,
+				459280BE2AC54A8F00300F5B /* ViewModel.swift */,
 				45C6948F2AC536D4008A8FF8 /* Network */,
 				45C694482AC52EEC008A8FF8 /* Main.storyboard */,
 				45C6944E2AC52EEC008A8FF8 /* Assets.xcassets */,
@@ -341,6 +344,7 @@
 				45C694982AC541BE008A8FF8 /* MovieResult.swift in Sources */,
 				45C694432AC52EEC008A8FF8 /* AppDelegate.swift in Sources */,
 				45C694A32AC545BC008A8FF8 /* NetworkProvider.swift in Sources */,
+				459280BF2AC54A8F00300F5B /* ViewModel.swift in Sources */,
 				45C694A12AC54532008A8FF8 /* MovieNetwork.swift in Sources */,
 				45C6949D2AC5429F008A8FF8 /* Network.swift in Sources */,
 				45C6949F2AC544D9008A8FF8 /* TVNetwork.swift in Sources */,
