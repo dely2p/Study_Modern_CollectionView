@@ -30,6 +30,7 @@
 		45C6949F2AC544D9008A8FF8 /* TVNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C6949E2AC544D9008A8FF8 /* TVNetwork.swift */; };
 		45C694A12AC54532008A8FF8 /* MovieNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C694A02AC54532008A8FF8 /* MovieNetwork.swift */; };
 		45C694A32AC545BC008A8FF8 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C694A22AC545BC008A8FF8 /* NetworkProvider.swift */; };
+		45C694A62AC54713008A8FF8 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C694A52AC54713008A8FF8 /* ButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		45C6949E2AC544D9008A8FF8 /* TVNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVNetwork.swift; sourceTree = "<group>"; };
 		45C694A02AC54532008A8FF8 /* MovieNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieNetwork.swift; sourceTree = "<group>"; };
 		45C694A22AC545BC008A8FF8 /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
+		45C694A52AC54713008A8FF8 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 				45C694502AC52EEC008A8FF8 /* LaunchScreen.storyboard */,
 				45C694532AC52EEC008A8FF8 /* Info.plist */,
 				45C6944B2AC52EEC008A8FF8 /* TVAndMovie.xcdatamodeld */,
+				45C694A52AC54713008A8FF8 /* ButtonView.swift */,
 			);
 			path = TVAndMovie;
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 				45C694A12AC54532008A8FF8 /* MovieNetwork.swift in Sources */,
 				45C6949D2AC5429F008A8FF8 /* Network.swift in Sources */,
 				45C6949F2AC544D9008A8FF8 /* TVNetwork.swift in Sources */,
+				45C694A62AC54713008A8FF8 /* ButtonView.swift in Sources */,
 				45C694452AC52EEC008A8FF8 /* SceneDelegate.swift in Sources */,
 				45C694912AC536E4008A8FF8 /* Const.swift in Sources */,
 				45C694942AC53930008A8FF8 /* TV.swift in Sources */,
