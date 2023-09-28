@@ -26,6 +26,10 @@
 		45C694942AC53930008A8FF8 /* TV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C694932AC53930008A8FF8 /* TV.swift */; };
 		45C694962AC540CF008A8FF8 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C694952AC540CF008A8FF8 /* Movie.swift */; };
 		45C694982AC541BE008A8FF8 /* MovieResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C694972AC541BE008A8FF8 /* MovieResult.swift */; };
+		45C6949D2AC5429F008A8FF8 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C6949C2AC5429F008A8FF8 /* Network.swift */; };
+		45C6949F2AC544D9008A8FF8 /* TVNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C6949E2AC544D9008A8FF8 /* TVNetwork.swift */; };
+		45C694A12AC54532008A8FF8 /* MovieNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C694A02AC54532008A8FF8 /* MovieNetwork.swift */; };
+		45C694A32AC545BC008A8FF8 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C694A22AC545BC008A8FF8 /* NetworkProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +68,10 @@
 		45C694932AC53930008A8FF8 /* TV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TV.swift; sourceTree = "<group>"; };
 		45C694952AC540CF008A8FF8 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		45C694972AC541BE008A8FF8 /* MovieResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieResult.swift; sourceTree = "<group>"; };
+		45C6949C2AC5429F008A8FF8 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		45C6949E2AC544D9008A8FF8 /* TVNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVNetwork.swift; sourceTree = "<group>"; };
+		45C694A02AC54532008A8FF8 /* MovieNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieNetwork.swift; sourceTree = "<group>"; };
+		45C694A22AC545BC008A8FF8 /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +170,10 @@
 			children = (
 				45C694922AC53919008A8FF8 /* Entities */,
 				45C694902AC536E4008A8FF8 /* Const.swift */,
+				45C6949C2AC5429F008A8FF8 /* Network.swift */,
+				45C6949E2AC544D9008A8FF8 /* TVNetwork.swift */,
+				45C694A02AC54532008A8FF8 /* MovieNetwork.swift */,
+				45C694A22AC545BC008A8FF8 /* NetworkProvider.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -325,6 +337,10 @@
 				45C694472AC52EEC008A8FF8 /* ViewController.swift in Sources */,
 				45C694982AC541BE008A8FF8 /* MovieResult.swift in Sources */,
 				45C694432AC52EEC008A8FF8 /* AppDelegate.swift in Sources */,
+				45C694A32AC545BC008A8FF8 /* NetworkProvider.swift in Sources */,
+				45C694A12AC54532008A8FF8 /* MovieNetwork.swift in Sources */,
+				45C6949D2AC5429F008A8FF8 /* Network.swift in Sources */,
+				45C6949F2AC544D9008A8FF8 /* TVNetwork.swift in Sources */,
 				45C694452AC52EEC008A8FF8 /* SceneDelegate.swift in Sources */,
 				45C694912AC536E4008A8FF8 /* Const.swift in Sources */,
 				45C694942AC53930008A8FF8 /* TV.swift in Sources */,
