@@ -38,6 +38,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUI()
+        setDataSource()
         bindViewModel()
         bindView()
         tvTrigger.onNext(())
@@ -61,8 +62,14 @@ class ViewController: UIViewController {
     private func bindViewModel() {
         let input = ViewModel.Input(tvTrigger: tvTrigger.asObserver(), movieTrigger: movieTrigger.asObserver())
         let output = viewModel.transform(input: input)
-        output.tvList.bind { tvList in
+        output.tvList.bind { [weak self] tvList in
             print("TV \(tvList)")
+            var snapshot = NSDiffableDataSourceSnapshot<Section, Item>()
+            let items = tvList.map { Item.normal($0) }
+            let section = Section.double
+            snapshot.appendSections([section])
+            snapshot.appendItems(items, toSection: section)
+            self?.dataSource?.apply(snapshot)
         }.disposed(by: disposeBag)
         output.movieList.bind { movieResult in
             print("Movie \(movieResult)")
