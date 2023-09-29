@@ -20,10 +20,10 @@ enum Item: Hashable {
 }
 
 class ViewController: UIViewController {
-
+    
     let buttonView = ButtonView()
-    let collectionView: UICollectionView = {
-        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout())
+    lazy var collectionView: UICollectionView = {
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: self.createLayout())
         collectionView.register(NormalCollectionViewCell.self, forCellWithReuseIdentifier: NormalCollectionViewCell.id)
         return collectionView
     }()
@@ -41,7 +41,7 @@ class ViewController: UIViewController {
         bindView()
         tvTrigger.onNext(())
     }
-
+    
     private func setUI() {
         self.view.addSubview(buttonView)
         self.view.addSubview(collectionView)
@@ -76,6 +76,29 @@ class ViewController: UIViewController {
         buttonView.movieButton.rx.tap.bind { [weak self] in
             self?.movieTrigger.onNext(Void())
         }.disposed(by: disposeBag)
+    }
+    
+    private func createLayout() -> UICollectionViewCompositionalLayout {
+        let config = UICollectionViewCompositionalLayoutConfiguration()
+        config.interSectionSpacing = 14
+        return UICollectionViewCompositionalLayout(sectionProvider: { [weak self] sectionIndex, _ in
+            return self?.createDoubleSection()
+        }, configuration: config)
+    }
+    
+    private func createDoubleSection() -> NSCollectionLayoutSection {
+        // item
+        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalHeight(1.0))
+        let item = NSCollectionLayoutItem(layoutSize: itemSize)
+        item.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 4, bottom: 8, trailing: 4)
+        
+        // group
+        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .absolute(320))
+        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, repeatingSubitem: item, count: 2)
+        
+        // section
+        let section = NSCollectionLayoutSection(group: group)
+        return section
     }
 }
 
