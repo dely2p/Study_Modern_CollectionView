@@ -3,7 +3,6 @@ Study to Modern Collection View
 
 > 프로젝트 목적
 
-- https://inf.run/m6WP
 - 인프런 [Swift Modern Collection View & MVVM 패턴 가이드](https://inf.run/m6WP) 강의를 들으며 Modern CollectionView를 알아보기 
 
 > Modern CollectionView란?
@@ -26,4 +25,5 @@ Study to Modern Collection View
     - Horizontal
     - Vertical
 - 앱 동작
+     ![TVAndMovie_rec](https://github.com/dely2p/Study_Modern_CollectionView/assets/20469311/c1dde312-c1b3-4299-96b3-92e43a3f720d)
 
