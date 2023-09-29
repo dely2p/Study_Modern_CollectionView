@@ -25,5 +25,6 @@ Study to Modern Collection View
     - Horizontal
     - Vertical
 - 앱 동작
+  
      ![TVAndMovie_rec](https://github.com/dely2p/Study_Modern_CollectionView/assets/20469311/c1dde312-c1b3-4299-96b3-92e43a3f720d)
 
