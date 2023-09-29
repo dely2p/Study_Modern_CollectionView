@@ -33,7 +33,7 @@ struct TV: Decodable, Hashable {
         name = try container.decode(String.self, forKey: .name)
         overview = try container.decode(String.self, forKey: .overview)
         let path = try container.decode(String.self, forKey: .posterPath)
-        posterURL = "image.tmdb.org/t/p/w500/\(path)"
+        posterURL = "https://image.tmdb.org/t/p/w500\(path)"
         let voteAverage = try container.decode(Float.self, forKey: .voteAverage)
         let voteCount = try container.decode(Int.self, forKey: .voteCount)
         vote = "\(voteAverage) \(voteCount)"

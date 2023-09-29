@@ -37,7 +37,7 @@ final class ListCollectionViewCell: UICollectionViewCell {
             $0.top.equalToSuperview()
         }
         releaseDateLabel.snp.makeConstraints {
-            $0.leading.equalTo(titleLabel.snp.left)
+            $0.leading.equalTo(titleLabel.snp.leading)
             $0.top.equalTo(titleLabel.snp.bottom).offset(4)
         }
     }
