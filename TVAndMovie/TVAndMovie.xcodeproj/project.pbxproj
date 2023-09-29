@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		453088332AC69D7F003ED70E /* NormalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453088322AC69D7F003ED70E /* NormalCollectionViewCell.swift */; };
+		453088352AC6A949003ED70E /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453088342AC6A949003ED70E /* Content.swift */; };
+		453088372AC6ACA9003ED70E /* BigImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453088362AC6ACA9003ED70E /* BigImageCollectionViewCell.swift */; };
+		453088392AC6AED9003ED70E /* ListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453088382AC6AED9003ED70E /* ListCollectionViewCell.swift */; };
+		4530883B2AC6B060003ED70E /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4530883A2AC6B060003ED70E /* HeaderView.swift */; };
 		459280BF2AC54A8F00300F5B /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459280BE2AC54A8F00300F5B /* ViewModel.swift */; };
 		45C694432AC52EEC008A8FF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C694422AC52EEC008A8FF8 /* AppDelegate.swift */; };
 		45C694452AC52EEC008A8FF8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C694442AC52EEC008A8FF8 /* SceneDelegate.swift */; };
@@ -52,6 +57,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		453088322AC69D7F003ED70E /* NormalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalCollectionViewCell.swift; sourceTree = "<group>"; };
+		453088342AC6A949003ED70E /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
+		453088362AC6ACA9003ED70E /* BigImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		453088382AC6AED9003ED70E /* ListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCollectionViewCell.swift; sourceTree = "<group>"; };
+		4530883A2AC6B060003ED70E /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		459280BE2AC54A8F00300F5B /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		45C6943F2AC52EEC008A8FF8 /* TVAndMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVAndMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45C694422AC52EEC008A8FF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +118,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		453088312AC69D71003ED70E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				453088322AC69D7F003ED70E /* NormalCollectionViewCell.swift */,
+				453088362AC6ACA9003ED70E /* BigImageCollectionViewCell.swift */,
+				453088382AC6AED9003ED70E /* ListCollectionViewCell.swift */,
+				4530883A2AC6B060003ED70E /* HeaderView.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		45C694362AC52EEC008A8FF8 = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +153,7 @@
 		45C694412AC52EEC008A8FF8 /* TVAndMovie */ = {
 			isa = PBXGroup;
 			children = (
+				453088312AC69D71003ED70E /* Cells */,
 				45C694422AC52EEC008A8FF8 /* AppDelegate.swift */,
 				45C694442AC52EEC008A8FF8 /* SceneDelegate.swift */,
 				45C694462AC52EEC008A8FF8 /* ViewController.swift */,
@@ -190,6 +212,7 @@
 				45C694932AC53930008A8FF8 /* TV.swift */,
 				45C694952AC540CF008A8FF8 /* Movie.swift */,
 				45C694972AC541BE008A8FF8 /* MovieResult.swift */,
+				453088342AC6A949003ED70E /* Content.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -338,13 +361,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				453088392AC6AED9003ED70E /* ListCollectionViewCell.swift in Sources */,
 				45C694962AC540CF008A8FF8 /* Movie.swift in Sources */,
 				45C6944D2AC52EEC008A8FF8 /* TVAndMovie.xcdatamodeld in Sources */,
 				45C694472AC52EEC008A8FF8 /* ViewController.swift in Sources */,
+				453088372AC6ACA9003ED70E /* BigImageCollectionViewCell.swift in Sources */,
+				453088352AC6A949003ED70E /* Content.swift in Sources */,
+				4530883B2AC6B060003ED70E /* HeaderView.swift in Sources */,
 				45C694982AC541BE008A8FF8 /* MovieResult.swift in Sources */,
 				45C694432AC52EEC008A8FF8 /* AppDelegate.swift in Sources */,
 				45C694A32AC545BC008A8FF8 /* NetworkProvider.swift in Sources */,
 				459280BF2AC54A8F00300F5B /* ViewModel.swift in Sources */,
+				453088332AC69D7F003ED70E /* NormalCollectionViewCell.swift in Sources */,
 				45C694A12AC54532008A8FF8 /* MovieNetwork.swift in Sources */,
 				45C6949D2AC5429F008A8FF8 /* Network.swift in Sources */,
 				45C6949F2AC544D9008A8FF8 /* TVNetwork.swift in Sources */,
