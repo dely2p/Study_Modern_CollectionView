@@ -29,6 +29,7 @@ class ViewController: UIViewController {
     }()
     
     let viewModel = ViewModel()
+    private var dataSource: UICollectionViewDiffableDataSource<Section, Item>?
     
     let disposeBag = DisposeBag()
     let tvTrigger = PublishSubject<Void>()
@@ -99,6 +100,17 @@ class ViewController: UIViewController {
         // section
         let section = NSCollectionLayoutSection(group: group)
         return section
+    }
+    
+    private func setDataSource() {
+        dataSource = UICollectionViewDiffableDataSource<Section, Item>(collectionView: collectionView, cellProvider: { collectionView, indexPath, item in
+            switch item {
+                case .normal(let tvData):
+                    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: NormalCollectionViewCell.id, for: indexPath) as? NormalCollectionViewCell
+                    cell?.configure(title: tvData.name, review: tvData.vote, description: tvData.overview, imageURL: tvData.posterURL)
+                    return cell
+            }
+        })
     }
 }
 
