@@ -9,10 +9,24 @@ import UIKit
 import SnapKit
 import RxSwift
 
+// Layout 기준
+enum Section: Hashable {
+    case double
+}
+
+// Cell 기준
+enum Item: Hashable {
+    case normal(TV)
+}
+
 class ViewController: UIViewController {
 
     let buttonView = ButtonView()
-    let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout())
+    let collectionView: UICollectionView = {
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout())
+        collectionView.register(NormalCollectionViewCell.self, forCellWithReuseIdentifier: NormalCollectionViewCell.id)
+        return collectionView
+    }()
     
     let viewModel = ViewModel()
     
